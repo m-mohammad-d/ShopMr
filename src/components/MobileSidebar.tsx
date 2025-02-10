@@ -72,7 +72,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isOpen, toggleSidebar, se
               <span>داشبورد</span>
             </Link>
           ) : (
-            <Link to="/login" className="flex items-center gap-2 rounded-md bg-primary px-8 py-3 text-white shadow-md transition duration-200 hover:bg-primary-shade1">
+            <Link to="/login" onClick={toggleSidebar} className="flex items-center gap-2 rounded-md bg-primary px-8 py-3 text-white shadow-md transition duration-200 hover:bg-primary-shade1">
               <FaUser className="h-6 w-6" />
               <span>ورود / ثبت نام</span>
             </Link>
